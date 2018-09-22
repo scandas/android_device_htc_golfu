@@ -12,6 +12,6 @@ for dir in $(find "$PATCHBASE"/* -type d); do
 		PATCHNAME=$(basename "$patch")
 		echo applying $PATCHDIR/$PATCHNAME to $PATCHTARGET
 		cd "$CMBASE/$PATCHTARGET" || exit 1
-		patch -p1 --dry-run --verbose < "$PATCHBASE/$PATCHDIR/$PATCHNAME" #|| exit 1
+		patch -p1 < "$PATCHBASE/$PATCHDIR/$PATCHNAME" #|| exit 1
 	done
 done
