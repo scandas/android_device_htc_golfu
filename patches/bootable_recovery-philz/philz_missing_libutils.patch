@@ -1,0 +1,20 @@
+diff '--exclude=.git' -crB a/Android.mk b/Android.mk
+*** a/Android.mk	2017-03-08 18:37:47.000000000 +0100
+--- b/Android.mk	2018-09-22 11:44:57.097842076 +0200
+***************
+*** 195,201 ****
+  LOCAL_STATIC_LIBRARIES += libbml_over_mtd
+  endif
+  
+! LOCAL_STATIC_LIBRARIES += libminui libpixelflinger_static libpng libcutils liblog
+  LOCAL_STATIC_LIBRARIES += libstdc++ libc
+  
+  LOCAL_STATIC_LIBRARIES += libselinux
+--- 195,201 ----
+  LOCAL_STATIC_LIBRARIES += libbml_over_mtd
+  endif
+  
+! LOCAL_STATIC_LIBRARIES += libminui libpixelflinger_static libpng libcutils liblog libutils
+  LOCAL_STATIC_LIBRARIES += libstdc++ libc
+  
+  LOCAL_STATIC_LIBRARIES += libselinux
