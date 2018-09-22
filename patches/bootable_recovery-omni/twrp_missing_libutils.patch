@@ -1,0 +1,12 @@
+diff '--exclude=.git' -Naur a/minuitwrp/Android.mk b/minuitwrp/Android.mk
+--- a/minuitwrp/Android.mk	2018-09-22 11:11:12.996966179 +0000
++++ b/minuitwrp/Android.mk	2018-09-22 20:39:53.545990864 +0000
+@@ -115,7 +115,7 @@
+     LOCAL_SRC_FILES += truetype.c
+ endif
+ 
+-LOCAL_SHARED_LIBRARIES += libz libc libcutils libjpeg libpng
++LOCAL_SHARED_LIBRARIES += libz libc libcutils libjpeg libpng libutils
+ LOCAL_STATIC_LIBRARIES += libpixelflinger_static
+ LOCAL_MODULE_TAGS := eng
+ LOCAL_MODULE := libminuitwrp

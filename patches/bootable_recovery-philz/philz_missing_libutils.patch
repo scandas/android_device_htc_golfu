@@ -1,0 +1,12 @@
+diff '--exclude=.git' -Naur a/Android.mk b/Android.mk
+--- a/Android.mk	2018-09-22 11:09:34.633158359 +0000
++++ b/Android.mk	2018-09-22 11:02:23.868826909 +0000
+@@ -195,7 +195,7 @@
+ LOCAL_STATIC_LIBRARIES += libbml_over_mtd
+ endif
+ 
+-LOCAL_STATIC_LIBRARIES += libminui libpixelflinger_static libpng libcutils liblog
++LOCAL_STATIC_LIBRARIES += libminui libpixelflinger_static libpng libcutils liblog libcutils
+ LOCAL_STATIC_LIBRARIES += libstdc++ libc
+ 
+ LOCAL_STATIC_LIBRARIES += libselinux
